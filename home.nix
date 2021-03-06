@@ -13,6 +13,7 @@
   imports = [ ./modules/browsers.nix modules/devolopment.nix ];
 
   home.packages = with pkgs; [
+    anki-bin
     htop
     signal-desktop
     sublime3
