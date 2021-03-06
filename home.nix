@@ -9,6 +9,20 @@
   home.username = "julian";
   home.homeDirectory = "/home/julian";
 
+  home.packages = with pkgs; [
+    chromium
+    htop
+    signal-desktop
+    sublime3
+    unzip
+    vim
+    mpv
+    youtube-dl
+    discord
+    jetbrains.pycharm-professional
+    _1password-gui
+  ];
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
