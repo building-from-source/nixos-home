@@ -9,8 +9,10 @@
   home.username = "julian";
   home.homeDirectory = "/home/julian";
 
+  # Imports
+  imports = [ ./modules/browsers.nix ];  
+
   home.packages = with pkgs; [
-    chromium
     htop
     signal-desktop
     sublime3
