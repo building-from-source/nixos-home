@@ -10,7 +10,7 @@
   home.homeDirectory = "/home/julian";
 
   # Imports
-  imports = [ ./modules/browsers.nix ];  
+  imports = [ ./modules/browsers.nix modules/devolopment.nix ];
 
   home.packages = with pkgs; [
     htop
@@ -21,7 +21,6 @@
     mpv
     youtube-dl
     discord
-    jetbrains.pycharm-professional
     _1password-gui
   ];
 
