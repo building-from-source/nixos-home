@@ -1,6 +1,12 @@
 { config, pkgs, ... }:
 
-{
+let
+  mayniklas = builtins.fetchGit {
+    # Updated 2020-03-07
+    url = "https://github.com/mayniklas/nixos-home";
+    rev = "cb1517d09b0995d4c7bad8424e7baa56b68c31c4";
+  };
+in {
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 
@@ -10,7 +16,11 @@
   home.homeDirectory = "/home/julian";
 
   # Imports
-  imports = [ ./modules/browsers.nix modules/devolopment.nix ];
+  imports = [
+    "${mayniklas}/modules/devolopment.nix"
+    "${mayniklas}/modules/chromium.nix"
+    "${mayniklas}/modules/firefox.nix"
+  ];
 
   home.packages = with pkgs; [
     anki-bin
