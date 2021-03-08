@@ -17,6 +17,7 @@ in {
 
   # Imports
   imports = [
+    "${mayniklas}/modules/alacritty.nix"
     "${mayniklas}/modules/devolopment.nix"
     "${mayniklas}/modules/chromium.nix"
     "${mayniklas}/modules/firefox.nix"
