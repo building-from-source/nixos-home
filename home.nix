@@ -35,6 +35,14 @@ in {
     _1password-gui
   ];
 
+programs = {
+    git = {
+      enable = true;
+      userEmail = "51420514+building-from-source@users.noreply.github.com";
+      userName = "building-from-source";
+    };
+  };
+
   # This value determines the Home Manager release that your
   # configuration is compatible with. This helps avoid breakage
   # when a new Home Manager release introduces backwards
