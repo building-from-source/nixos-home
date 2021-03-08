@@ -36,7 +36,7 @@ in {
     _1password-gui
   ];
 
-programs = {
+  programs = {
     git = {
       enable = true;
       userEmail = "51420514+building-from-source@users.noreply.github.com";
