@@ -15,6 +15,9 @@ in {
   home.username = "julian";
   home.homeDirectory = "/home/julian";
 
+  # Allow "unfree" licenced packages
+  nixpkgs.config = { allowUnfree = true; };
+
   # Imports
   imports = [
     "${mayniklas}/modules/alacritty.nix"
