@@ -37,6 +37,7 @@ in {
     youtube-dl
     discord
     _1password-gui
+    intel-gpu-tools
   ];
 
   programs = {
