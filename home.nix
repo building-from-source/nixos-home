@@ -28,6 +28,7 @@ in {
 
   home.packages = with pkgs; [
     anki-bin
+    qolibri
     htop
     signal-desktop
     sublime3
