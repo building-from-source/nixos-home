@@ -40,6 +40,7 @@ in {
     discord
     _1password-gui
     intel-gpu-tools
+    okular
   ];
 
   programs = {
