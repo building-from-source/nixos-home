@@ -6,6 +6,7 @@ let
     url = "https://github.com/mayniklas/nixos-home";
     rev = "cb1517d09b0995d4c7bad8424e7baa56b68c31c4";
   };
+  anki-bin = pkgs.callPackage ./packages/anki-bin.nix { };
 in {
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
@@ -39,19 +40,6 @@ in {
     discord
     _1password-gui
     intel-gpu-tools
-  ];
-  
-  nixpkgs.overlays = [
-    (self: super: {
-      anki-bin = super.anki-bin.overrideAttrs (old: rec {
-        version = "2.1.35";
-        src = super.fetchurl {
-          url =
-            "https://github.com/ankitects/anki/releases/download/${version}/anki-${version}-linux-amd64.tar.bz2";
-          sha256 = "00kbxg2d605k7pf59y33wdb70czlfa87gbzlazgixbli79g9lhn0";
-        };
-      });
-    })
   ];
 
   programs = {
