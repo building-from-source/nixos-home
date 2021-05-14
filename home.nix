@@ -28,19 +28,25 @@ in {
   ];
 
   home.packages = with pkgs; [
+    _1password-gui
     anki-bin
-    qolibri
+    ark
+    atom
+    discord
+    gradle
     htop
+    intel-gpu-tools
+    mpv
+    okular
+    qolibri
     signal-desktop
+    spotify
+    sublime-merge
     sublime3
+    unrar
     unzip
     vim
-    mpv
     youtube-dl
-    discord
-    _1password-gui
-    intel-gpu-tools
-    okular
   ];
 
   programs = {
